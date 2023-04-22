@@ -4,6 +4,7 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import { Montserrat } from "next/font/google";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 // https://nextjs.org/docs/basic-features/font-optimization#with-tailwind-css
 const montserrat = Montserrat({
@@ -25,6 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
       >
         <NavBar />
         <Component {...pageProps} />
+        <Footer />
       </main>
     </>
   );

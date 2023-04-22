@@ -37,7 +37,7 @@ type Props = {};
 
 const NavBar = (props: Props) => {
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between rela">
+    <header className="w-full px-32 py-9 font-medium flex items-center justify-between relative">
       <nav>
         <CustomLink className="mr-4" href="/" title="Home" />
         <CustomLink className="mx-4" href="/project" title="Projects" />

@@ -1,18 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import { LinkArrow } from "@/components/Icons";
+import AnimatedText from "@/components/AnimatedText";
+import HireMe from "@/components/HireMe";
 
 import profilePic from "@/public/images/profile/developer-pic-1.png";
+import lightBulbPic from "@/public/images/svgs/miscellaneous_icons_1.svg";
 
 const resumeFilePath = "/dummy-resume.pdf";
 
 export default function Home() {
   return (
     <div className="flex items-center text-dark w-full">
-      <Layout className="pt-0">
+      <Layout className="pt-1">
         <div className="flex items-center justify-between w-full">
           <div className="w-1/2">
             <Image
@@ -55,6 +57,15 @@ export default function Home() {
           </div>
         </div>
       </Layout>
+
+      <HireMe />
+      <div className="absolute right-8 bottom-8 inline-block w-24">
+        <Image
+          src={lightBulbPic}
+          alt={"Light Bulb Picture"}
+          className="w-full h-auto"
+        />
+      </div>
     </div>
   );
 }
