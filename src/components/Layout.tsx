@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {
   className?: string;
-  children: JSX.Element | JSX.Element[];
+  children: React.ReactNode;
 };
 
 const Layout = (props: Props) => {
