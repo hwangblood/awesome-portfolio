@@ -6,8 +6,8 @@ import { LinkArrow } from "@/components/Icons";
 import AnimatedText from "@/components/AnimatedText";
 import HireMe from "@/components/HireMe";
 
-import profilePic from "@/public/images/profile/developer-pic-1.png";
-import lightBulbPic from "@/public/images/svgs/miscellaneous_icons_1.svg";
+import profilePic from "@public/images/profile/developer-pic-1.png";
+import lightBulbPic from "@public/images/svgs/miscellaneous_icons_1.svg";
 
 const resumeFilePath = "/dummy-resume.pdf";
 
@@ -37,7 +37,7 @@ export default function Home() {
             <div className="flex items-center self-start mt-2">
               <Link
                 href={resumeFilePath}
-                download={true}
+                // download={true}
                 target="_blank"
                 className="flex items-center bg-dark text-light p-2.5 px-6 
                   rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
